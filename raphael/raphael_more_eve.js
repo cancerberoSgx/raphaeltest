@@ -3752,8 +3752,8 @@
     paperproto.rect = function (x, y, w, h, r) {
         var out = R._engine.rect(this, x || 0, y || 0, w || 0, h || 0, r || 0);
         this.__set__ && this.__set__.push(out);
-        return out;
 		eveEventsInstallAll(out);// sgurin - mouse event eve enable
+        return out;
     };
     /*\
      * Paper.ellipse

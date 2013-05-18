@@ -45,6 +45,18 @@
 		return [ x + pb.left, y + pb.top ];
 	};
 
+	
+	
+	
+	Raphael.fn.countShapes = function() {
+		var aux = this.bottom, i = 0; 
+		while(aux) {
+			aux=aux.next; 
+			i++;
+		}
+		return i;
+	}; 
+	
 })();
 
 /* for this to work first we need to install a */
